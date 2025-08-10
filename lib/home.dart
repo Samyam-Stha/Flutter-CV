@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_cv/styled_bullet.dart';
+import 'package:my_cv/styled_endtext.dart';
 import 'package:my_cv/styled_richtext.dart';
 import 'package:my_cv/styled_text_heading.dart';
 
@@ -30,6 +31,7 @@ class Home extends StatelessWidget {
             Projects(),
             Education(),
             Achievements(),
+            Certifications(),
           ],
         ),
       ),
@@ -558,6 +560,143 @@ class Achievements extends StatelessWidget {
               child: Text(
                 '2nd Runner up',
                 style: TextStyle(fontSize: 14),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class Certifications extends StatelessWidget {
+  const Certifications({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Expanded(child: HeadingText(text: 'Certifications')),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledEndtext(
+                  'Front End Development – HTML  ',
+                  'GreatLearning',
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                child: Text(
+                  'https://www.mygreatlearning.com/certificate/JJPNIORC',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    color: Colors.blue,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledEndtext(
+                  'PHP  ',
+                  'GreatLearning',
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                child: Text(
+                  'https://www.mygreatlearning.com/certificate/MMZODSQH',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    color: Colors.blue,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledEndtext(
+                  'Introduction to JavaScript	  ',
+                  'GreatLearning',
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                child: Text(
+                  'https://www.mygreatlearning.com/certificate/QGPXCILG',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    color: Colors.blue,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledEndtext(
+                  'Responsive Web Design   ',
+                  'freeCodeCamp',
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                child: Text(
+                  'https://www.freecodecamp.org/certification/samyam_shrestha/responsive-web-design',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    color: Colors.blue,
+                    fontSize: 14,
+                  ),
+                ),
               ),
             ),
           ],
