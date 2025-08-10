@@ -29,6 +29,7 @@ class Home extends StatelessWidget {
             Experience(),
             Projects(),
             Education(),
+            Achievements(),
           ],
         ),
       ),
@@ -514,6 +515,48 @@ class Education extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
               child: Text(
                 'Shuvatara School',
+                style: TextStyle(fontSize: 14),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class Achievements extends StatelessWidget {
+  const Achievements({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Expanded(child: HeadingText(text: 'Achievements')),
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+              child: Text(
+                'SXC Sandbox 2.0 Hackathon',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+              child: Text(
+                '2nd Runner up',
                 style: TextStyle(fontSize: 14),
               ),
             ),
