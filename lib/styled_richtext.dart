@@ -5,9 +5,11 @@ class StyledRichtext extends StatelessWidget {
     super.key,
     required this.firsttext,
     required this.secondtext,
+    this.lineHeight,
   });
   final String firsttext;
   final String secondtext;
+  final double? lineHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +28,7 @@ class StyledRichtext extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.normal,
               color: Colors.black,
+              height: lineHeight,
             ),
           ),
         ],

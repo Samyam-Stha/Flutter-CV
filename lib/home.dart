@@ -109,6 +109,78 @@ class Technical extends StatelessWidget {
             Expanded(child: HeadingText(text: 'Technical Skills')),
           ],
         ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledRichtext(
+                  firsttext: 'Languages:',
+                  secondtext:
+                      'JavaScript, TypeScript, Python, SQL, HTML5, CSS3, PHP',
+                  lineHeight: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledRichtext(
+                  firsttext: 'Frameworks and Librarires:',
+                  secondtext:
+                      'ReactJs, React Native, Node.js, Express.js, Tailwind CSS, Shadcn/ui',
+                  lineHeight: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledRichtext(
+                  firsttext: 'Database:',
+                  secondtext: 'MySQL, PostgreSQL, MongoDB',
+                  lineHeight: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledRichtext(
+                  firsttext: 'VCS:',
+                  secondtext: 'Github',
+                  lineHeight: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: StyledRichtext(
+                  firsttext: 'Keen to Learn:',
+                  secondtext: 'Flutter, Laravel, Django',
+                  lineHeight: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
       ],
     );
   }
