@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_cv/styled_richtext.dart';
 import 'package:my_cv/styled_text_heading.dart';
 
 class Home extends StatelessWidget {
@@ -49,25 +50,9 @@ class Introduction extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-              child: RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Phone: ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextSpan(
-                      text: '\t +977 9860538128',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
+              child: StyledRichtext(
+                firsttext: 'Phone:',
+                secondtext: '+977 9860538128',
               ),
             ),
           ],
@@ -76,25 +61,9 @@ class Introduction extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-              child: RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Email: ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextSpan(
-                      text: '\t \t samyamsth2@gmail.com',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
+              child: StyledRichtext(
+                firsttext: 'Email:',
+                secondtext: '\t samyamsth2@gmai.com',
               ),
             ),
           ],
@@ -103,25 +72,9 @@ class Introduction extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-              child: RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Github: ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextSpan(
-                      text: '\t github.com/Samyam-Stha',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
+              child: StyledRichtext(
+                firsttext: 'Github',
+                secondtext: '\tgithub.com/Samyam-Stha',
               ),
             ),
           ],
